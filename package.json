@@ -1,0 +1,9 @@
+{
+  "name": "prettier-precommit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lint-staged": "^9.2.1"
+  }
+}
