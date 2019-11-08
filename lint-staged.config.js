@@ -1,3 +1,7 @@
 module.exports = {
-  '*.{js,jsx,ts,tsx,css,scss}': ['prettier --write', 'git add'],
+  '*.{js,jsx}': filenames => [
+    `yarn eslint ${filenames.join(' ')} --fix`,
+    'git add',
+  ],
+  '*.{ts,tsx,css,scss}': ['prettier --write', 'git add'],
 }
